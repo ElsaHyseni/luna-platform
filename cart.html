@@ -7,7 +7,6 @@
 	<title>Luna</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<link rel="stylesheet" media="all" href="css/style.css">
-	<link rel="stylesheet" media="all" href="css/login-register.css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -47,7 +46,7 @@
 		<div class="container">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li>Login/Register</li>
+				<li>Cart</li>
 			</ul>
 		</div>
 		<!-- / container -->
@@ -57,53 +56,74 @@
 	<div id="body">
 		<div class="container">
 			<div id="content" class="full">
-                <div class="cont">
-                  <div class="form sign-in">
-                    <h2>Welcome back,</h2>
-                    <label>
-                      <span>Email</span>
-                      <input type="email" />
-                    </label>
-                    <label>
-                      <span>Password</span>
-                      <input type="password" />
-                    </label>
-                    <p class="forgot-pass">Forgot password?</p>
-                    <button type="button" class="submit">Sign In</button>
-                  </div>
-                  <div class="sub-cont">
-                    <div class="img">
-                      <div class="img__text m--up">
-                        <h2>New here?</h2>
-                        <p>Sign up and discover great amount of new opportunities!</p>
-                      </div>
-                      <div class="img__text m--in">
-                        <h2>One of us?</h2>
-                        <p>If you already has an account, just sign in. We've missed you!</p>
-                      </div>
-                      <div class="img__btn">
-                        <span class="m--up">Sign Up</span>
-                        <span class="m--in">Sign In</span>
-                      </div>
-                    </div>
-                    <div class="form sign-up">
-                      <h2>Time to feel like home,</h2>
-                      <label>
-                        <span>Name</span>
-                        <input type="text" />
-                      </label>
-                      <label>
-                        <span>Email</span>
-                        <input type="email" />
-                      </label>
-                      <label>
-                        <span>Password</span>
-                        <input type="password" />
-                      </label>
-                      <button type="button" class="submit">Sign Up</button>
-                    </div>
-                  </div>
-                </div>
+				<div class="cart-table">
+					<table>
+						<tr>
+							<th class="items">Items</th>
+							<th class="price">Price</th>
+							<th class="qnt">Quantity</th>
+							<th class="total">Total</th>
+							<th class="delete"></th>
+						</tr>
+						<tr>
+							<td class="items">
+								<div class="image">
+									<img src="images/6.jpg" class="product-images" alt="">
+								</div>
+								<h3><a href="#">Love Me Not Necklace</a></h3>
+								<p>9Kt gold Loves Me Not necklace, featuring 1 heart charm, 2 flower charms, and 2 Cubic Zirconia stones.</p>
+							</td>
+							<td class="price">$1 350.00</td>
+							<td class="qnt">
+								<select>
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</td>
+							<td class="total">$1 350.00</td>
+							<td class="delete"><a href="#" class="ico-del"></a></td>
+						</tr>
+						<tr>
+							<td class="items">
+								<div class="image">
+									<img src="images/61.jpg" class="product-images" alt="">
+								</div>
+								<h3><a href="#">TOMODACHI POT</a></h3>
+								<p>This model has a drainage hole at the bottom. Currently, it’s available in a bright green glaze with light blue interior. Appx 10 cm high x 10 cm in diameter.</p>
+							</td>
+							<td class="price">$2 100.00</td>
+							<td class="qnt">
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</td>
+							<td class="total">$2 100.00</td>
+							<td class="delete"><a href="#" class="ico-del"></a></td>
+						</tr>
+						<tr>
+							<td class="items">
+								<div class="image">
+									<img src="images/62.jpg" class="product-images" alt="">
+								</div>
+								<h3><a href="#">UOVO</a></h3>
+								<p>Any time you run out of something - cereals, fruit, or crisps - this bowl’s cute face will always be there to cheer you up!</p>
+							</td>
+							<td class="price">$1 050.00</td>
+							<td class="qnt"><select><option>1</option><option>2</option></select></td>
+							<td class="total">$1 050.00</td>
+							<td class="delete"><a href="#" class="ico-del"></a></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="total-count">
+					<h4>Subtotal: $4 500.00</h4>
+					<p>+shippment: $30.00</p>
+					<h3>Total to pay: <strong>$4 530.00</strong></h3>
+					<a href="#" class="btn-grey">Finalize and pay</a>
+				</div>
 		
 			</div>
 			<!-- / content -->
