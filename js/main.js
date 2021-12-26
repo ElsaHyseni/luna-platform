@@ -58,3 +58,95 @@ $(document).ready(function() {
 document.querySelector('.img__btn').addEventListener('click', function() {
 	document.querySelector('.cont').classList.toggle('s--signup');
   });
+
+  const submitBtn = document.getElementById('submit-btn');
+  const submitBtnSignup = document.getElementById('submit-btn-signup');
+
+const validate = (e) => {
+  e.preventDefault();
+  const username = document.getElementById('username');
+  const emailAddress = document.getElementById('email-address');
+  const password = document.getElementById('password');
+  if (username.value === "") {
+    alert("Please enter your username.");
+    username.focus();
+    return false;
+  }
+    
+  if (emailAddress.value === "") {
+    alert("Please enter your email address.");
+    emailAddress.focus();
+    return false;
+  }
+
+  if (!emailIsValid(emailAddress.value)) {
+    alert("Please enter a valid email address.");
+    emailAddress.focus();
+    return false;
+  }
+
+  if (password.value === "") {
+    alert("Please enter a password!");
+    password.focus();
+    return false;
+  }
+
+  if (password.value.length < 8) {
+    alert("You password should have more than 8 characters!");
+    password.focus();
+    return false;
+  }
+  
+  
+
+  alert("Login was successfull!")
+  return true; // Can submit the form data to the server
+}
+
+const validateSignup = (e) => {
+	e.preventDefault();
+	const username = document.getElementById('username-signup');
+	const emailAddress = document.getElementById('email-address-signup');
+	const password = document.getElementById('password-signup');
+	if (username.value === "") {
+	  alert("Please enter your username.");
+	  username.focus();
+	  return false;
+	}
+	  
+	if (emailAddress.value === "") {
+	  alert("Please enter your email address.");
+	  emailAddress.focus();
+	  return false;
+	}
+  
+	if (!emailIsValid(emailAddress.value)) {
+	  alert("Please enter a valid email address.");
+	  emailAddress.focus();
+	  return false;
+	}
+  
+	if (password.value === "") {
+	  alert("Please enter a password!");
+	  password.focus();
+	  return false;
+	}
+  
+	if (password.value.length < 8) {
+	  alert("You password should have more than 8 characters!");
+	  password.focus();
+	  return false;
+	}
+	
+	
+  
+	alert("Your sign up is successfull!")
+	return true; // Can submit the form data to the server
+  }
+
+const emailIsValid = email => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+submitBtn.addEventListener('click', validate);
+submitBtnSignup.addEventListener('click', validateSignup);

@@ -19,7 +19,7 @@
 			<a href="index.html" id="logo" title="Luna">Luna</a>
 			<div class="right-links">
 				<ul>
-					<li><a href="#"><span class="ico-signout"></span>Sign Up</a></li>
+                    <li><a href="login-register.html"><span class="ico-account"></span>Sign Up</a></li>
 				</ul>
 			</div>
 		</div>
@@ -57,20 +57,40 @@
 	<div id="body">
 		<div class="container">
 			<div id="content" class="full">
+                
+                <!-- <form id="form">
+                    <table cellspacing="2" cellpadding="2" border="1">
+                      <tr>
+                        <td align="right">Username</td>
+                        <td><input type="text" id="username" /></td>
+                      </tr>
+                      <tr>
+                        <td align="right">Email Address</td>
+                        <td><input type="text" id="email-address" /></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit" id="submit-btn" /></td>
+                      </tr>
+                    </table>
+                  </form> -->
                 <div class="cont">
-                  <div class="form sign-in">
-                    <h2>Welcome back,</h2>
-                    <label>
-                      <span>Email</span>
-                      <input type="email" />
-                    </label>
-                    <label>
-                      <span>Password</span>
-                      <input type="password" />
-                    </label>
-                    <p class="forgot-pass">Forgot password?</p>
-                    <button type="button" class="submit">Sign In</button>
-                  </div>
+                  <form id="form">
+                    <div class="form sign-in">
+                        <h2>Welcome back,</h2>
+                        <label>
+                          <span>Email</span>
+                            <input type="text" id="username" value="username" style="display: none;" />
+                          <input type="text" id="email-address" />
+                        </label>
+                        <label>
+                          <span>Password</span>
+                          <input type="password" id="password" />
+                        </label>
+                        <p class="forgot-pass">Forgot password?</p>
+                        <button type="submit" class="submit" id="submit-btn">Sign In</button>
+                      </div>
+                  </form>
                   <div class="sub-cont">
                     <div class="img">
                       <div class="img__text m--up">
@@ -86,22 +106,24 @@
                         <span class="m--in">Sign In</span>
                       </div>
                     </div>
-                    <div class="form sign-up">
-                      <h2>Time to feel like home,</h2>
-                      <label>
-                        <span>Name</span>
-                        <input type="text" />
-                      </label>
-                      <label>
-                        <span>Email</span>
-                        <input type="email" />
-                      </label>
-                      <label>
-                        <span>Password</span>
-                        <input type="password" />
-                      </label>
-                      <button type="button" class="submit">Sign Up</button>
-                    </div>
+                    <form id="form-signup">
+                        <div class="form sign-up">
+                            <h2>Time to feel like home,</h2>
+                            <label>
+                              <span>Username</span>
+                              <input type="text" id="username-signup" />
+                            </label>
+                            <label>
+                              <span>Email</span>
+                              <input type="text" id="email-address-signup" />
+                            </label>
+                            <label>
+                              <span>Password</span>
+                              <input type="password" id="password-signup" />
+                            </label>
+                            <button type="submit" class="submit" id="submit-btn-signup">Sign Up</button>
+                          </div>
+                    </form>
                   </div>
                 </div>
 		
