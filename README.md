@@ -1,1 +1,2 @@
-# luna-platform
+# Luna
+Project for Web Engineering UBT
