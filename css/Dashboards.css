@@ -1,0 +1,73 @@
+.body8{
+    background-image: url(../Project/Dashboardd.jpg);   
+     font-family:'Orbitron', sans-serif;
+     color: #dc94ebde;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inputet input{ 
+    background-color: rgb(204, 204, 204);
+    font-family:'Orbitron', sans-serif;
+    height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50px;
+    border: #9198e5;   
+}
+
+.deleteButton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    border: 2px;
+    color: #3a4149;
+    background: #e7ebee;
+    line-height: 1.15;
+    font-size: 16px;
+}
+
+.editButton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    border: 2px;
+    color: #3a4149;
+    background: #e7ebee;
+    line-height: 1.15;
+    font-size: 16px;
+}
+
+.lbtn { 
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 2px;
+    color: #3a4149;
+    background: #e7ebee;
+    line-height: 1.15;
+    font-size: 16px;
+}
+
+.insertButton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500 !important;
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    border: 2px;
+    color: #3a4149;
+    background: #e7ebee;
+    line-height: 1.15;
+    font-size: 20px;
+}

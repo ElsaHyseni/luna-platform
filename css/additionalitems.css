@@ -1,0 +1,208 @@
+/* ADDITIONAL ITEMS CSS*/
+.body8{
+    background: linear-gradient(135deg, #ce0f6e, #1e46b4);
+    background-attachment: fixed;    
+
+    overflow-x: hidden;
+  }
+  table, th, td {
+    border: none;
+    border-collapse: collapse;
+    padding: 0 20px;
+    font-family:'Orbitron', sans-serif; 
+    color: #fff;   
+  }
+  th, td { 
+    text-align: center;
+    padding-bottom: 10px; 
+  }
+  .titulli2 {
+    color:white; 
+    font-family:'Orbitron', sans-serif;
+    text-align:center; padding-top:130px; font-size:30px;
+  }
+  .pershkrimi2 {
+    color:white;text-align:center; font-family:'Orbitron', sans-serif;
+    padding-top:4px; font-size:20px;
+  }
+  p{
+      color:white;
+      font-family:'Orbitron', sans-serif;
+  }
+  #oferta {
+      text-decoration: line-through;
+      opacity: 0.3;
+  }
+  #items{
+      width:250px;
+  }
+
+  #button {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(235, 23, 164, 0.651);
+    color: black; 
+    margin-left: 16px;
+    margin-top: 35px;
+
+  }
+  #button:hover {
+    background-color: rgba(216, 216, 27, 0.575);
+    color: white;
+  }
+
+  .butonat button{
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(235, 23, 164, 0.651);
+    color: black; 
+    margin-left: 16px;
+    margin-top: 35px;
+  }
+  
+
+  #items { 
+  transition: all .2s ease-in-out; 
+}
+  #items:hover { 
+      transform: scale(1.6); 
+  }
+  .header2 {
+    height:33px; 
+    box-shadow: 6px 5px 5px rgb(255, 255, 0);
+    display:flex; 
+    flex-direction: row; 
+    background-color:rgb(180, 9, 137);
+  }
+    .nav-list2{
+        margin: -75px;
+        padding-left: 100px;
+    }
+  /*STILIZIMI I LINKAVE NE HEADER NE GJENDJE NORMALE (PA KLIKIM)*/
+    .nav-list2 a {
+      float: left;
+      color: black; 
+      text-align: center;
+      text-decoration: none;
+      padding: 13px;
+      font-size: 18px;
+      font-family: 'Orbitron', sans-serif;
+    }
+  
+  /*STILIZIMI I LINKAVE NE HEADER KUR VENDOSET MOUSE MBI TE*/
+  .nav-list2 a:hover {
+    font-family: 'Orbitron', sans-serif;
+    color:rgb(255, 196, 0);
+  }
+  
+  /* LINKU AKTIV NE HEADER*/
+  .nav-list2 a.active {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .footer1 {
+    padding: 40px;
+    margin-top: 30px;
+    text-align: center;
+    border: none;
+    opacity: 0.7;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.10), rgb(0, 88, 139));
+}
+
+.icons1 {
+    margin: 15px 23px;
+    display: inline;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.icons1 a {
+    color: rgb(206, 53, 147);
+    padding: 30px;
+    font-size: 30px;
+}
+
+.icons1 a:hover {
+    color: white;
+}
+#address1{
+    color: white;
+}
+
+
+
+/* OUR PRODUCTS */
+
+.containeer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+  
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.product-box a {
+  text-decoration: none;
+  color: black;
+}
+
+.product-box img {
+  width: 300px;
+}
+
+.product-text {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.product-box p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  margin: auto;
+}
+
+.product-box .price {
+  font-size: 24px;
+}
+
+.product-box button {
+  margin-top: auto;
+  background-color: rgb(206, 53, 147);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.product-box button:hover {
+  opacity: 75%;
+  transition: 0.3s;
+}

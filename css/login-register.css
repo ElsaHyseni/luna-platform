@@ -85,7 +85,7 @@ button {
   top: 0;
   width: 900px;
   height: 100%;
-  background-image: url("../images/01.jpg");
+  background-image: url("../Project/01.jpg");
   background-size: cover;
   transition: transform 1.2s ease-in-out;
 }
@@ -254,4 +254,18 @@ input {
 .icon-link--twitter {
   left: auto;
   right: 5px;
+}
+
+.first-credentials{
+  display: flex;
+}
+
+.pwd-format{
+  font-size: 8px;
+  opacity: 0.8;
+}
+
+.password-fields{
+  padding-left: 20px;
+  padding-right: 20px;
 }

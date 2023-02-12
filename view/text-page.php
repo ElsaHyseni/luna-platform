@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>Diana’s jewelry</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<link rel="stylesheet" media="all" href="css/style.css">
+	<link rel="stylesheet" media="all" href="CSS/style.css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -14,10 +14,10 @@
 
 	<header id="header">
 		<div class="container">
-			<a href="index.html" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
+			<a href="../index.php" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
 			<div class="right-links">
 				<ul>
-					<li><a href="cart.html"><span class="ico-products"></span>3 products, $4 500.00</a></li>
+					<li><a href="views/cart.php"><span class="ico-products"></span>3 products, $4 500.00</a></li>
 					<li><a href="#"><span class="ico-account"></span>Account</a></li>
 					<li><a href="#"><span class="ico-signout"></span>Sign out</a></li>
 				</ul>
@@ -31,12 +31,10 @@
 		<div class="container">
 			<div class="trigger"></div>
 			<ul>
-				<li><a href="products.html">New collection</a></li>
-				<li><a href="products.html">necklaces</a></li>
-				<li><a href="products.html">earrings</a></li>
-				<li><a href="products.html">Rings</a></li>
-				<li><a href="products.html">Gift cards</a></li>
-				<li><a href="products.html">Promotions</a></li>
+				<li><a href="/views/products.php">New collection</a></li>
+				<li><a href="/views/products.php">necklaces</a></li>
+				<li><a href="/views/products.php">earrings</a></li>
+				<li><a href="/views/products.php">About Us</a></li>
 			</ul>
 		</div>
 		<!-- / container -->
@@ -125,7 +123,7 @@
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script src="JS/plugins.js"></script>
+	<script src="JS/main.js"></script>
 </body>
 </html>

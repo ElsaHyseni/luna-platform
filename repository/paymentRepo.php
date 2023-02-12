@@ -32,7 +32,10 @@
 
 	        $statement->execute([$fname, $lname, $cardno, $validthru, $ccv, $address, $city, $zipcode, $email, $product, $size]);
 
-	        echo "<script> alert('Thank you for choosing BLEMA - Clothing Brand!'); </script>";
+	        echo "<script> 
+			alert('Thank you for choosing Luna - Jewellery Brand!');
+			window.location.href='index.php'
+			</script>";
 
 	    }
 

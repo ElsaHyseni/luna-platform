@@ -80,7 +80,7 @@ include_once '../database/databaseConnection.php';
 	    function getUserByUsername($username){
 	        $connect = $this->connection;
 
-	        $sql = "SELECT * FROM users WHERE Username='$username'";
+	        $sql = "SELECT * FROM users WHERE Email='$username'";
 
 	        $statement = $connect->query($sql);
 	        $user_username = $statement->fetch();
@@ -102,7 +102,7 @@ include_once '../database/databaseConnection.php';
 	    function checkRole($username){
 	        $connect = $this->connection;
 
-	        $sql = "SELECT * FROM users WHERE Username='$username' AND Role='user'";
+	        $sql = "SELECT * FROM users WHERE Email='$username' AND Role='user'";
 
 	        $statement = $connect->query($sql);
 	        $user_role = $statement->fetchAll();

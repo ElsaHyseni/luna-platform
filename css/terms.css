@@ -1,0 +1,18 @@
+body{
+  background: linear-gradient(135deg, #ce0f6e, #1e46b4);
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+.terms{
+    color:rgb(0, 0, 0); font-family:'Orbitron', sans-serif;
+    font-size:x-large;
+}
+p{
+    color:rgb(0, 0, 0); font-family:'Orbitron', sans-serif;
+    font-size:x-large;  
+}
+.privacy{
+    color:pink
+}
+img{
+    width:300px;}

@@ -2,7 +2,9 @@
 include_once '../repository/productsRepo.php';
 include_once '../models/products.php';
 include_once '../repository/activityRepo.php';
-$admin = $_SESSION['username'];
+if(isset($_SESSION['username'])){
+    $admin = $_SESSION['username'];
+}
 
     if(isset($_POST['insertProductButton'])){ 
         if(empty($_POST['productName']) || empty($_POST['productText'])

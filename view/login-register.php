@@ -3,23 +3,22 @@
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<link rel="shortcut icon" href="images/titleLogo.png">
+	<link rel="shortcut icon" href="../Project/titleLogo.png">
 	<title>Luna</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<link rel="stylesheet" media="all" href="css/style.css">
-	<link rel="stylesheet" media="all" href="css/login-register.css">
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" media="all" href="../CSS/style.css">
+	<link rel="stylesheet" media="all" href="../CSS/login-register.css">
+	<!-- <link rel="stylesheet" href="../CSS/login.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
 
 	<header id="header">
 		<div class="container">
-			<a href="index.html" id="logo" title="Luna">Luna</a>
+			<a href="Index.php" id="logo" title="Luna">Luna</a>
 			<div class="right-links">
 				<ul>
-                    <li><a href="login-register.html"><span class="ico-account"></span>Sign Up</a></li>
+                    <li><a href="login-register.php"><span class="ico-account"></span>Sign Up</a></li>
 				</ul>
 			</div>
 		</div>
@@ -31,12 +30,11 @@
 		<div class="container">
 			<div class="trigger"></div>
 			<ul>
-				<li><a href="products.html">New collection</a></li>
-				<li><a href="products.html">necklaces</a></li>
-				<li><a href="products.html">earrings</a></li>
-				<li><a href="products.html">Rings</a></li>
-				<li><a href="products.html">Gift cards</a></li>
-				<li><a href="products.html">Promotions</a></li>
+				<li><a href="products.php">New collection</a></li>
+				<!-- <li><a href="/views/products.php">necklaces</a></li> -->
+				<!-- <li><a href="/views/products.php">earrings</a></li> -->
+				<li><a href="team.php">About Us</a></li>
+				<li><a href="Contactus.php">Contact Us</a></li>
 			</ul>
 		</div>
 		<!-- / container -->
@@ -46,7 +44,7 @@
 	<div id="breadcrumbs">
 		<div class="container">
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li>Login/Register</li>
 			</ul>
 		</div>
@@ -57,40 +55,30 @@
 	<div id="body">
 		<div class="container">
 			<div id="content" class="full">
-                
-                <!-- <form id="form">
-                    <table cellspacing="2" cellpadding="2" border="1">
-                      <tr>
-                        <td align="right">Username</td>
-                        <td><input type="text" id="username" /></td>
-                      </tr>
-                      <tr>
-                        <td align="right">Email Address</td>
-                        <td><input type="text" id="email-address" /></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td><input type="submit" value="Submit" id="submit-btn" /></td>
-                      </tr>
-                    </table>
-                  </form> -->
                 <div class="cont">
-                  <form id="form">
+                  <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
                     <div class="form sign-in">
                         <h2>Welcome back,</h2>
                         <label>
                           <span>Email</span>
                             <input type="text" id="username" value="username" style="display: none;" />
-                          <input type="text" id="email-address" />
+						  <input type="text" name='username' >    
                         </label>
+						<!-- <div class="error error-txt">Email can't be blank</div>   -->
+
                         <label>
                           <span>Password</span>
-                          <input type="password" id="password" />
+						  <input type="password" name='password'>
                         </label>
+						<!-- <div class="error error-txt">Password can't be blank</div> -->
+
                         <p class="forgot-pass">Forgot password?</p>
-                        <button type="submit" class="submit" id="submit-btn">Sign In</button>
+                        <button type="submit" class="submit" id="loginButton" value="LOG IN" name="loginButton">Sign In</button>
+						<!-- <input type="submit" id="loginButton" class="lbtn" value="LOG IN" name="loginButton"/> -->
                       </div>
                   </form>
+					<?php include_once '../controllers/userController.php';?>
+
                   <div class="sub-cont">
                     <div class="img">
                       <div class="img__text m--up">
@@ -106,24 +94,50 @@
                         <span class="m--in">Sign In</span>
                       </div>
                     </div>
-                    <form id="form-signup">
+                    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
                         <div class="form sign-up">
                             <h2>Time to feel like home,</h2>
+							<div class="first-credentials">
+								<label>
+                            	  <span>First Name</span>
+                            	  <input type="text" name="fname" id="firstName" />
+                            	</label>
+								<label>
+                            	  <span>Last Name</span>
+                            	  <input type="text" name="lname" id="lastName"  />
+                            	</label>
+							</div>
                             <label>
                               <span>Username</span>
-                              <input type="text" id="username-signup" />
+                              <input type="text"  name="username" id="user" />
                             </label>
                             <label>
                               <span>Email</span>
-                              <input type="text" id="email-address-signup" />
+                              <input type="text" name="email" id="email" />
                             </label>
-                            <label>
-                              <span>Password</span>
-                              <input type="password" id="password-signup" />
-                            </label>
-                            <button type="submit" class="submit" id="submit-btn-signup">Sign Up</button>
+							<div>
+            				    <!-- add a password format display -->
+            			
+								<div class="first-credentials">
+									<label>
+										<span>Enter password</span>
+            				    		<input type="password" name="password" id="password">
+									</label>
+									<label>
+										<span>Confirm password</span>
+            				    		<input type="password" name="confirmPassword" id="confirmPassword">    
+									</label>
+								</div>
+								<span class="pwd-format">
+            				        8-15 AlphaNumeric Characters
+            				    </span>
+            				</div>
+
+                            <button type="submit" class="submit" id="register" name="registerButton" value="REGISTER">Sign Up</button>
                           </div>
                     </form>
+
+
                   </div>
                 </div>
 		
@@ -176,7 +190,8 @@
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script src="../JS/plugins.js"></script>
+	<script src="../JS/main.js"></script>
+    <script src="../JS/register.js"></script>
 </body>
 </html>

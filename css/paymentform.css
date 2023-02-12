@@ -1,0 +1,114 @@
+
+.card-wrapper {
+  background-color: #6FB7E9;
+  width: 100%;
+  display: flex;
+
+}
+.personal-information {
+  background-color: #c87ccaa9; 
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+  font-family:'Orbitron', sans-serif;
+}
+h1 {
+  font-size: 1.3em;
+  font-family: 'Orbitron', sans-serif;
+}
+input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+  font-family:'Orbitron', sans-serif;
+}
+input[type="text"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-family:'Orbitron', sans-serif;
+}
+input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-family:'Orbitron', sans-serif;
+}
+input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #c87ccaa9;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  font-family:'Orbitron', sans-serif;
+}
+input[type="submit"]:hover{
+  background-color: #741ebb;
+  transition: 0.3s ease;
+  font-family:'Orbitron', sans-serif;
+}
+#column-left {
+  width: 46.5%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.5%;
+  float: right;
+}
+
+@media only screen and (max-width: 480px){
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-container {
+    margin: 0 2%;
+  }
+  input {
+    font-size: 1em;
+  }
+  #input-button {
+    width: 100%;
+  }
+  #input-field {
+    width: 96.5%;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  input {
+    margin: 2px 0;
+  }
+  input[type="submit"]{
+    height: 50px;
+  }
+  #column-left {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+  #column-right {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+}
+.payment{
+    height:345px;
+}
+
+list{
+  background-color: #cc5333;
+}
